@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>TESTES</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-size: 100%;
+            background-image: url('./sissy-bar.jpg');
+            animation-name: animate;
+            animation-duration: 10s;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes animate {
+            from {
+                transform: translateX(-2%)
+            }
+            to {
+                transform: translateX(0)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>

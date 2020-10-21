@@ -1,18 +1,26 @@
-const slideShowImages = document.querySelectorAll('.slide-show-image')
+let delay = 3000,
+    currentImageIndex = 0,
+    images = document.querySelectorAll('#slide-show img')
+    max = images.length
 
-
-const nextImageDelay = 3000
-let currentImageCounter = 0
-
-for(currentImageCounter in slideShowImages) {
-    slideShowImages[currentImageCounter].style.display = "none"
-}
+function nextImage() {
     
+    images[currentImageIndex].classList.remove("selected")
 
+    currentImageIndex++
 
+    if(currentImageIndex >= max)
+        currentImageIndex = 0;
 
-// setInterval(nextImage, nextImageDelay)
+    images[currentImageIndex].classList.add("selected")
+}
 
-// function nextImage() {
-//     slideShowImages[currentImageCounter].style.display = "none"
-// }
+function start() {
+    //executa função a cada time
+    setInterval(() => {
+        //troca de imagem
+        nextImage()
+    }, delay)
+}
+
+window.addEventListener("load", start)

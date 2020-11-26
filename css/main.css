@@ -21,6 +21,8 @@ textarea {
     background: url('../images/custom-bg.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -46,7 +48,7 @@ header {
 #logo { 
     display: flex;
     justify-content: center;
-    height: 10rem;
+    min-height: 10rem;
     width: 100%;
     margin-top: 4rem;
 }
@@ -89,7 +91,7 @@ h1 {
     border: 1px solid #FFFFFF;
     border-radius: 10px;
     width: 22rem;
-    height: 4.5rem;
+    min-height: 4.5rem;
     color: #FFFFFF;
     font-size: 1.4rem;
     font-weight: 300;
@@ -101,7 +103,7 @@ h1 {
 }
 
 #social-media {
-    height: 100%;
+    min-height: 100%;
     margin: 0 auto;
     width: 20rem;
     margin-top: 5.2rem;
@@ -164,7 +166,7 @@ h1 {
 }
 
 .separador {
-    height: 20rem;
+    min-height: 20rem;
     background: url('../images/drag-star-slide.jpg') no-repeat;
     background-size: cover;
     background-position: center;

@@ -17,12 +17,19 @@ textarea {
 }
 
 #page-landing {
-    width: 100vw;
-    height: 100vh;
     background-color: #151516;
     background: url('../images/custom-bg.jpg') no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#page-landing .container {
+    padding: 0 4rem;
 }
 
 header {
@@ -32,8 +39,8 @@ header {
 #menu-hamburguer {
     display: flex;
     justify-content: flex-end;
-    padding: 4rem;
     width: 100%;
+    padding-top: 4rem;
 }
 
 #logo { 
@@ -41,6 +48,7 @@ header {
     justify-content: center;
     height: 10rem;
     width: 100%;
+    margin-top: 4rem;
 }
 
 h1 {
@@ -60,7 +68,7 @@ h1 {
 
 
 #slogan h1 {
-    margin: 12rem 0 5rem 0;
+    margin: 12rem 0 4rem 0;
     padding: 0 4rem;
     font-size: 1.4rem;
 }
@@ -74,7 +82,7 @@ h1 {
 }
 
 .button {
-    margin: 5rem auto;
+    margin: 5.2rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,10 +101,10 @@ h1 {
 }
 
 #social-media {
-    height: 5rem;
+    height: 100%;
     margin: 0 auto;
     width: 20rem;
-    margin-top: 1rem;
+    margin-top: 5.2rem;
 }
 
 #social-media span {
@@ -108,11 +116,21 @@ h1 {
     justify-content: space-between;
 }
 
+.swipe-up {
+    margin-top: 0.9rem;
+}
+
+.swipe-up span {
+    font-size: 1rem;
+}
+
+/* --- CONTENT --- */
+
 .container-content {
-    width: 100vw;
-    height: 27rem;
+    height: 100vh;
     padding: 2rem 4rem 2rem 4rem;
     background-color: #FFFFFF;
+    line-height: 2;
 }
 
 .container-content h1 {
@@ -120,19 +138,35 @@ h1 {
     margin-bottom: 2rem;
 }
 
-.container-content p {
+.container-content>p {
     margin-top: 2rem;
     text-align: justify;
 }
 
-.container {
-    height: 100vh;
-    background: url('../images/drag-star-slide.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.topic {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.topic-row {
+    display: flex;
+    align-items: center;
+}
+
+.topic-row p {
+    margin-left: 2rem;
+}
+
+.topic-row + .topic-row {
+    margin-top: 4rem;
 }
 
 .separador {
     height: 20rem;
+    background: url('../images/drag-star-slide.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }

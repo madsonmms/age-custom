@@ -16,12 +16,6 @@ textarea {
   font: 400 1.8rem/1 "Montserrat", sans-serif;
 }
 
-#home {
-    background-color: #151516;
-    background: url('../images/custom-bg.jpg') no-repeat;
-    background-size: cover;
-}
-
 .container {
     width: 100vw;
     min-height: 100vh;
@@ -30,48 +24,68 @@ textarea {
     padding: 0;
 }
 
-#menu-hamburguer {
+.top-bar,
+.swipe-up {
     display: flex;
-    justify-content: flex-end;
-    width: 100%;
+
+    background-color: #151516;
+}
+
+#menu-hamburguer {
+    position: absolute;
+    right: 0;
+
     padding: 4rem 4rem 3rem 2.6rem;
 }
 
 #logo { 
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    min-height: 10rem;
-    width: 100%;
-}
 
-h1 {
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-style: italic;
-    width: 100%;
-    line-height: 1.5;
     text-align: center;
-    font-weight: 700;
+
+    min-height: 10rem;
+    min-width: 100%;
+
+    margin: 2rem 0 2rem 0;
+
+    color: #fff;
 }
 
-.home-content h1 {
-    margin-top: 2.6rem;
-    font-size: 3.6rem;
+#logo h1 {
+    line-height: 2;
+}
+
+#logo span {
+    font-size: 1.4rem;
+}
+
+#slogan p {
+    width: 100%;
+
+    font-size: 1.6rem;
     color: #FFFFFF;
+    text-align: center;
 }
 
+#image-carousel {
+    padding: 2rem;
+    background: gray;
+
+    height: 47rem;
+}
 
 #slogan h1 {
-    margin: 10rem 0 4rem 0;
-    padding: 0 4rem;
-    font-size: 1.4rem;
-}
+    padding: 2rem;
 
-.home-content span {
-    display: block;
+    font-size: 2.4rem;
+    font-weight: 200;
+
     color: #FFFFFF;
-    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 1.4rem;
+
 }
 
 .button {
@@ -99,6 +113,11 @@ h1 {
 }
 
 #social-media {
+    display: block;
+    color: #FFFFFF;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.4rem;
 
     margin: 0 auto;
     width: 20rem;
@@ -118,11 +137,13 @@ h1 {
     align-items: center;
     justify-content: center;
 
-    margin-top: 6.6rem;
+    color: #FFFFFF;
+
+    height: 10rem;
 }
 
 .swipe-up span {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
 
 .swipe-up span+span {
@@ -211,4 +232,10 @@ h1 {
     background: url('../images/drag-star-slide.jpg') no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: 40rem;
+    object-fit: cover;
 }

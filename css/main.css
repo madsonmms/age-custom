@@ -287,23 +287,23 @@ it has to set position:relative in father and son elements --*/
 
 @keyframes slideBg {
     0% {
-        background-image: url('../images/bg/drag-star-bg.jpg');
+        background-image: url('../images/bg/drag-star.jpg');
     }
 
     25% {
-        background-image: url('../images/bg/harley-bg.jpg');
+        background-image: url('../images/bg/harley.jpg');
     }
 
     50% {
-        background-image: url('../images/bg/lateral-bg.jpg');
+        background-image: url('../images/bg/lateral.jpg');
     }
 
     75% {
-        background-image: url('../images/bg/moto-lateral-bg.jpg');
+        background-image: url('../images/bg/moto-lateral.jpg');
     }
 
     100% {
-        background-image: url('../images/bg/sissy-bg.jpg');
+        background-image: url('../images/bg/sissy.jpg');
     }
 }
 

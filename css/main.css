@@ -16,6 +16,11 @@ textarea {
   font: 400 1.8rem/1 "Montserrat", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color:#fff;
+}
+
 .container {
     width: 100vw;
     min-height: 100vh;
@@ -26,9 +31,11 @@ textarea {
 
 .top-bar,
 .swipe-up {
-    display: flex;
-
     background-color: #151516;
+}
+
+.top-bar {
+    display: flex;
 }
 
 #menu-hamburguer {
@@ -99,7 +106,7 @@ it has to set position:relative in father and son elements --*/
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.8)
+    background: rgba(0, 0, 0, 0.7)
 }
 /*-- --*/
 
@@ -120,7 +127,7 @@ it has to set position:relative in father and son elements --*/
 }
 
 .button {
-    margin: 5.2rem auto;
+    margin: 8.2rem auto;
 
     display: flex;
     justify-content: center;
@@ -139,7 +146,6 @@ it has to set position:relative in father and son elements --*/
 }
 
 .button span {
-    margin-top: 0.7rem;
     margin-right: 1rem;
 }
 
@@ -161,6 +167,7 @@ it has to set position:relative in father and son elements --*/
 #social-media .social-icons {
     display: flex;
     justify-content: space-between;
+    margin-top: 1rem;
 }
 
 .swipe-up {
@@ -173,17 +180,23 @@ it has to set position:relative in father and son elements --*/
     height: 10rem;
 }
 
-.swipe-up span {
+.swipe-up a {
     font-size: 1.4rem;
+    margin: 0 1rem;
 }
 
 .swipe-up span+span {
     margin-left: 2rem;
 }
 
+.swipe-up .arrow {
+    animation: arrows 1s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+}
+
 /* --- CONTENT --- */
 
-.container-content {
+.know-the-process {
     width: 100vw;
     height: 100vh;
 
@@ -196,13 +209,13 @@ it has to set position:relative in father and son elements --*/
     position: relative;
 }
 
-.container-content h1 {
+.know-the-process h1 {
     font-size: 1.6rem;
 
     margin-bottom: 2rem;
 }
 
-.container-content>p {
+.know-the-process>p {
     margin-top: 2rem;
 
     text-align: justify;
@@ -291,5 +304,16 @@ it has to set position:relative in father and son elements --*/
 
     100% {
         background-image: url('/images/bg/sissy-bg.jpg');
+    }
+}
+
+@keyframes arrows {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(0, -3px)
     }
 }

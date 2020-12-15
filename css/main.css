@@ -23,7 +23,7 @@ a {
 
 .container {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
 
     margin: 0;
     padding: 0;
@@ -36,6 +36,8 @@ a {
 
 .top-bar {
     display: flex;
+
+    height: 25vh;
 }
 
 #menu-hamburguer {
@@ -53,18 +55,19 @@ a {
 
     text-align: center;
 
-    min-height: 10rem;
-    min-width: 100%;
-
-    padding: 1rem;
-
-    margin: 2rem 0 2rem 0;
+    width: 100%;
 
     color: #fff;
 }
 
 #logo h1 {
     line-height: 2;
+    font-size: 3.6rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#logo img {
+    height: 8rem;
 }
 
 #logo span {
@@ -80,10 +83,15 @@ a {
 }
 
 #image-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     padding: 2rem;
+
     background: gray;
 
-    height: 47rem;
+    height: 60vh;
     width: 100%;
 
     position: relative;
@@ -94,6 +102,10 @@ a {
     backface-visibility: hidden;
     animation: slideBg 15s linear infinite 0s;
     animation-timing-function: ease-in-out;
+}
+
+section {
+    height: 30%;
 }
 
 /*-- CSS trick to set opacity in background
@@ -127,7 +139,7 @@ it has to set position:relative in father and son elements --*/
 }
 
 .button {
-    margin: 8.2rem auto;
+    margin: 4.2rem auto;
 
     display: flex;
     justify-content: center;
@@ -175,9 +187,11 @@ it has to set position:relative in father and son elements --*/
     align-items: center;
     justify-content: center;
 
+    height: 20vh;
     color: #FFFFFF;
 
-    height: 13rem;
+    height: clamp(5rem, 13rem, 20rem);
+
 }
 
 .swipe-up a {
